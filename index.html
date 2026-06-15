@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CGT — Clean Water from Sunlight</title>
+  <meta name="description" content="CGT builds solar still technology that turns sunlight into clean water for smallholder farmers across Africa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#top">💧 CGT</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a class="btn btn--primary btn--sm" href="#contact">Get started</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>Clean water, straight from sunlight.</h1>
+        <p class="hero__sub">CGT designs affordable solar stills that turn brackish and contaminated water into safe drinking water — built for smallholder farmers.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Get started</a>
+          <a class="btn btn--ghost" href="#how">See how it works</a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="hero__blob"></div>
+        <span class="hero__emoji">🌞💧</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM / ABOUT ============ -->
+  <section class="section section--sand" id="about">
+    <div class="container">
+      <h2>The problem we solve</h2>
+      <p class="lead">Millions of smallholder farmers lack reliable access to clean water, while sitting under some of the highest solar irradiance on Earth. CGT turns that sunlight into a resource.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="container">
+      <h2>How it works</h2>
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="card__num">1</div>
+          <h3>Capture</h3>
+          <p>Contaminated or brackish water enters the still's evaporation basin.</p>
+        </article>
+        <article class="card">
+          <div class="card__num">2</div>
+          <h3>Evaporate</h3>
+          <p>Solar heat evaporates pure water, leaving salts and contaminants behind.</p>
+        </article>
+        <article class="card">
+          <div class="card__num">3</div>
+          <h3>Collect</h3>
+          <p>Vapour condenses on the cover and runs off as clean drinking water.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section--sand" id="features">
+    <div class="container">
+      <h2>Why CGT</h2>
+      <div class="grid grid--3">
+        <article class="card"><h3>☀️ Zero energy cost</h3><p>Runs entirely on sunlight — no electricity, no fuel.</p></article>
+        <article class="card"><h3>🔧 Low maintenance</h3><p>No moving parts, no filters to replace.</p></article>
+        <article class="card"><h3>📈 Scalable</h3><p>Modular design scales from a household to a farm.</p></article>
+        <article class="card"><h3>🌍 Locally built</h3><p>Designed for local manufacture and repair.</p></article>
+        <article class="card"><h3>💰 Affordable</h3><p>A fraction of the cost of grid or bottled water.</p></article>
+        <article class="card"><h3>🧪 Proven physics</h3><p>Output modelled on local solar irradiance data.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / CONTACT ============ -->
+  <section class="cta" id="contact">
+    <div class="container cta__inner">
+      <h2>Bring clean water to your community</h2>
+      <p>Tell us about your needs and we'll be in touch.</p>
+      <!-- TODO: replace YOUR_FORM_ID with your real Formspree ID from https://formspree.io (free) -->
+      <form class="cta__form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <button class="btn btn--primary" type="submit">Request info</button>
+      </form>
+      <p class="cta__note" id="formNote" hidden>Thanks — we'll be in touch soon!</p>
+      <p class="cta__error" id="formError" hidden>Something went wrong. Please email us directly.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>💧 CGT</span>
+      <span>© <span id="year"></span> CGT. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
